@@ -1,0 +1,90 @@
+<% include head %>
+<p>This is a sample client to demonstrate the use of Fusepools String Matching Algorithmus (SMA) and REST i/o capabilities.</p>
+<h2 id="about">About</h2>
+<p>The goal is to prove the feasibility of using the <a href="https://github.com/fusepool/fusepool-sma">Fusepool SMA component</a> to interlink Linked Data Sources, like <a href="http://dbpedia.org">DBpedia</a> with other data classification schemes, such as <a href="http://d-nb.info/standards/elementset/gnd">GND</a>. We want to find additional interlinks between data sets to enrich both sets.</p>
+<p>In this tutorial I will explain how I installed and configured fusepool to</p>
+<ul>
+<li><p>Task 1: <strong>Create a sample taxonomy</strong> based on the authority data for subject indexing of German National Library (GND)</p></li>
+<li><p>Task 2: <strong>Create a sample dataset</strong> to run the SMA component on, based on useful plaintext attributes in DBpedia</p></li>
+<li><p>Task 3: <strong>Integrate these two data sets</strong> into Fusepool plattform and create a enrichment chain which runs SMA on the taxonomy</p></li>
+</ul>
+<p>If you follow the instructions you should be able to use the Annotation Client.</p>
+<h2 id="installing-fusepool">Installing Fusepool</h2>
+<p>Fusepool is available as source <a href="https://github.com/fusepool">code on github</a>, but there are also precompiled -jar's available, at the <a href="https://jenkins.fusepool.info/job/fusepool-platform/">fusepool's repository</a></p>
+<p>Download the latest build (I use #378) and change to the directory. Then type:</p>
+<p><code>java -Xmx4G -XX:MaxPermSize=512M -Xss512k -XX:+UseCompressedOops -jar launcher-0.1-SNAPSHOT.jar</code></p>
+<p>If you want to run fusepool as server in the background and allow yourselve to logout from the shell use <code>nohup</code>: <code>nohup java -Xmx18G -XX:MaxPermSize=512M -Xss512k -XX:+UseCompressedOops -jar launcher-0.1-SNAPSHOT.jar &amp;</code></p>
+<h2 id="set-up-sample-taxonomy-and-document-corpus-for-matching">Set up Sample Taxonomy and Document Corpus for matching</h2>
+<p>This section describes the selection of data used for annotating DBpedia pages with Authority Data (concepts) from the German National Library (GND). Both sources can be accessed using <a href="http://www.w3.org/TR/sparql11-overview/">SPARQL</a> at the endpoints of <a href="http://zbw.eu/beta/sparql/gnd">GND</a> and <a href="de.dbpedia.org/sparql">DBpedia</a> (german). It is described how to integrate the data into fusepool to build an Dictionary Annotator for using the <a href="https://github.com/fusepool/fusepool-sma">String Matching Algorithm</a> (SMA) of the Fusepool project (Task 1 + Task 2).</p>
+<h3 id="building-dictionaries">Building Dictionaries</h3>
+<p>The German National Library (<a href="http://www.dnb.de/">DNB</a>) published its Authority Data on their <a href="http://www.dnb.de/lds">website</a>, but there is also a <a href="http://zbw.eu/beta/sparql/gnd">SPARQL Endpoint</a>, provided by the German National Library of Economics (<a href="http://www.zbw.eu/en/">ZBW</a>). At the time of writing this tutorial the ZBW-Endpoint contains the DNB Dumps of Feb 2014.</p>
+<p>Fusepools Dictionary Annotator expects a dictionary in <code>.nt</code> that has a concept's identifier (URI) associated with labels used for matching text documents. However, you are free to use additional properties and vocabs in your graph. Just dont forget the properties you want to use for the matching and the <code>type</code> of your concept that provides a derferencable URI. (We will need this information for the set up of the Dictionary Annotator <!--[described here](#) -->)</p>
+<p>For our example I choose <code>skos:Concept</code> for the URI and <code>rdfs:label</code> as matching strings. Additionally we have <code>skos:hasTopConcept</code>, and <code>skos:prefLabel</code>. <strong>Please note</strong> that I used the <code>rdfs:label</code> property as a workaround to bring preferred labels and synonyms into the dictionary. Meanwhile, the configuration supports to use <a href="https://github.com/fusepool/fusepool-sma/issues/3">multiply labels for matching</a>.</p>
+<p>Your dictionary graph should look like this:</p>
+<pre><code>&lt;http://d-nb.info/gnd/4020775-4&gt; &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; &quot;Gesundheitswesen&quot; .
+&lt;http://d-nb.info/gnd/4020775-4&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; &quot;Gesundheitswesen&quot; .
+&lt;http://d-nb.info/gnd/4020775-4&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; &quot;Medizinalwesen&quot; .
+&lt;http://d-nb.info/gnd/4020775-4&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; &quot;Gesundheitssystem&quot; .
+&lt;http://d-nb.info/gnd/4020775-4&gt; &lt;http://www.w3.org/2004/02/skos/core#hasTopConcept&gt; &lt;http://d-nb.info/standards/vocab/gnd/gnd-sc#27.20&gt; .
+&lt;http://d-nb.info/gnd/4020775-4&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt; .
+&lt;http://d-nb.info/gnd/4020775-4&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://d-nb.info/standards/elementset/gnd#SubjectHeadingSensoStricto&gt; .</code></pre>
+<p>To have this modified structure we can make a construct on the ZBW Endpoint. For instance, I want to create a dictionary for each subclass of <a href="http://d-nb.info/standards/elementset/gnd#SubjectHeading">SubjectHeading</a> in the <a href="d-nb.info/standards/elementset/gnd#">GND Ontology</a>. This has the advantage that you are more flexible in building custom chains with particular types of subject headings, for instance I choose:</p>
+<ul>
+<li><p><code>SubjectHeading</code> // 196.670 id's</p></li>
+<li><p><code>SubjectHeadingSensoStricto</code> // 76.416 id's</p></li>
+<li><p><code>NomenclatureInBiologyOrChemistry</code> // 50.285 id's</p></li>
+<li><p><code>HistoricSingleEventOrEra</code> // 6779 id's</p></li>
+<li><p><code>Language</code> // 5299 id's</p></li>
+<li><p><code>ProductNameOrBrandName</code> // 4843 id's</p></li>
+<li><p><code>EthnographicName</code> // 3971 id's</p></li>
+<li><p><code>GroupOfPersons</code> // 273 id's</p></li>
+</ul>
+<p>A construct looks like the following:</p>
+<pre><code>PREFIX :        &lt;http://d-nb.info/gnd/&gt;
+PREFIX gndo:    &lt;http://d-nb.info/standards/elementset/gnd#&gt;
+PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos:    &lt;http://www.w3.org/2004/02/skos/core#&gt;
+construct {  
+?s a ?type .   
+?s a skos:Concept . 
+?s skos:hasTopConcept ?sCat .  
+?s skos:prefLabel ?sPref . 
+?s rdfs:label ?sPref .  
+?s rdfs:label ?sAlt . }
+where {
+       ?s a gndo:{class to construct} . 
+       ?s a ?type .  
+       ?s  gndo:preferredNameForTheSubjectHeading ?sPref ; 
+       gndo:gndSubjectCategory ?sCat .
+       Optional{ ?s gndo:variantNameForTheSubjectHeading ?sAlt .}
+      }</code></pre>
+<p>Where <code>{class to construct}</code> is a class from the GND Ontology (cf. list above).</p>
+<p>Copy the response of the SPARQL Endpoint into a file and set the filetype (extension) to <code>.nt</code>. Now we have a dictionary which can be used by fusepool.</p>
+<h3 id="upload-the-dictionary">Upload the Dictionary</h3>
+<p>Start the Fusepool plattform and go to upload form to insert a new graph for your dictionary at <a href="http://localhost.de:8080/graph/upload-form">http://localhost.de:8080/graph/upload-form )</a> You can specify any name in this syntax <code>urn:x-localinstance:/HistoricSingleEventOrEra.graph</code>, copy the name ( URI ), because we will need it for the setup of the dictionary. Then, select a N-Triples file from your filesystem and click upload.</p>
+<p>Now, go to: <a href="http://localhost:8080/admin/graphs/">yourhost:<port>/admin/graphs/</a> to check your graph was uploaded correctly.</p>
+<h3 id="configure-the-dictionary-annotator-in-fusepool">Configure the Dictionary Annotator in Fusepool</h3>
+<p>After you have loaded the data you can proceed with setting up the dictionary annotator in the <a href="http://localhost:8080/system/console/configMgr">OSGi configuration console</a> Search for Dictionary Annotator and click on <code>+ sign</code> to create a new factory configuration. Configure it based on the screenshot: <a href="/"><img src="./img/docu/conf_dictionary.png" alt="[Configure the Dictionary]" /></a></p>
+<p>here the values for convenience:</p>
+<pre><code>dictionary name: HistoricSingleEventOrEra-dict 
+Description: `your description`
+graph-uri: urn:x-localinstance:/HistoricSingleEventOrEra.graph
+Label-field: rdfs:label
+URI-Field: skos:Concept 
+prefixes: `skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;` + `rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;`
+Category: `HistoricSingleEventOrEra;http://d-nb.info/standards/elementset/gnd#HistoricSingleEventOrEra`</code></pre>
+<p>The recall for concept detection will increase if you set stemming to &quot;German&quot;, however the precision may drop. I think its a good thing to set case sensitivity to zero, to prevent false matchings because of acronyms.</p>
+<h3 id="add-the-dictionary-to-a-enhancement-chain">Add the dictionary to a enhancement chain</h3>
+<p>In stanbol/fusepool terminology chains can be used in sequence to enhance content, i.e. compute matchings. You can compute matchings using the Data Life Center (DLC). At the writing of this tutorial there is no possibility to specify a certain chain for batch matching, so you need to add the dictionaries to the <strong>default chain</strong>. You find the <code>Weighted Chain Configuration</code> in the <a href="http://localhost:8080/system/console/configMgr">OSGi configuration console</a> which contains a factory setting for the default chain. Click on configure and add the <em>exact name</em> of the dictionary, i.e. <code>HistoricSingleEventOrEra-dict</code> for our example. <img src="./img/docu/config_default-chain.png" alt="Add your dictionaries to the default chain" /></p>
+<h4 id="creating-an-own-chain">Creating an own chain</h4>
+<p>You may create a new chain to route your analytics to certain sets of dictionaries or to combine them with other engines. This is basicly done as if you add your dictionary names to the default chain. Just create a new factory setting in the <code>Weighted Chain Configuration</code>.</p>
+<h4 id="try-it">Try it</h4>
+
+<p>Go to: <a href="http://localhost:8080/enhancer/">http://localhost:8080/enhancer/</a> and check if all engines in default are available. (i.e. click on default or your custom chain name). 
+The chain only works if all your engines are 'green'. Check your configuration if not.
+<br> Paste text and review the results. 
+
+From this point you should be able to use the Library Enrichtment Engine. 
+<br/>In the source go to ./res/services.json  to add the URIs of your chains, so you can switch services i.e. chains.
+
+<% include foot %>

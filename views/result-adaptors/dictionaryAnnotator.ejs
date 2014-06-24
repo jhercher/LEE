@@ -1,0 +1,24 @@
+<li>
+ <b>
+  <a data-id="<%=id%>" target="_blank" title="search in primo " href="<%= primosearch + id %>"  class="concept-name" >
+  <%= label %> 
+  </a></b>
+    <small> => <%= type %>
+ 
+  <a target="_blank" title="lookup in GND" href="http://d-nb.info/gnd/<%= id %>"  id="gnd<%= id %>" class="concept" data="<%=id%>" >
+ ( <%= id %> )
+  </a>
+    <span class="more" data="<%= id %>">( + )
+         <span id="gndDesc<%= id %>" class=" hidden gndDescription"></span>
+    </span>
+
+  </small>
+</li>
+<script type="text/javascript">
+   /*$(document).ready( //TODO: getGndDescription via sockets.io ?!
+            function(){
+                getGndDescription("<%= id %>");
+            }
+    )*/
+
+</script>

@@ -1,0 +1,23 @@
+{
+    "default-local":{
+        "label":"default-local",
+        "uri":"http://localhost:8080/enhancer/chain/default"
+    },
+    "all-local":{
+        "label":"gnd-all-local",
+        "uri":"http://localhost:8080/enhancer/chain/gnd-all"
+    },
+    "all":{
+        "label":"All",
+        "uri":"http://data.ub.fu-berlin.de:8080/enhancer/"
+    },
+    "products":{
+        "label":"Products",
+        "uri":"http://data.ub.fu-berlin.de:8080/enhancer/chain/gnd-products"
+    },
+    "products-local":{
+        "label":"Products-local",
+        "uri":"http://localhost:8080/enhancer/chain/gnd-products"
+    }
+
+}

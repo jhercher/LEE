@@ -1,0 +1,144 @@
+<% include head %>
+<script src="/js/stopwords.js"></script>
+<script src="/js/services.js"></script>
+<script src="/js/tagcloud.js"></script>
+
+<div id="form" class="row clearfix">
+ <form action="./" method="post">
+
+
+     <div id="textinput" class="col-md-8 column">
+        <textarea id="analyzerInput" name="analyze" type="text" cols="35" rows="4" placeholder="paste your text here"><% if (typeof text !== "undefined") {%><%=text.trim()%><% } %></textarea>
+     </div>
+
+     <div id="options" class="col-md-4 column">
+         <label>Services</label>
+         <div id="services">
+             <select name="service">
+
+             </select>
+         </div>
+         <div id="stoppwordList">
+             <label>Stop Words</label>
+             <div id="stopwordlists">
+                 <ul class="list-group">
+
+                 </ul>
+             </div>
+         </div>
+         <div id="submitBtn">
+             <input class="btn btn-primary" type="submit" value="annotate">
+         </div>
+
+     </div>
+
+  </form>
+ </div>
+     <% if (typeof props !== "undefined") { %>
+ <div id="results" class="row clearfix">
+     <div class="column col-md-12">
+    <form method="get" action="http://primo.kobv.de/primo_library/libweb/action/search.do?vid=FUB&amp;reset_config=true" target="_blank" class="primosearch">
+        <label>Click on any term below to construct a search in FU Catalog.</label><br>
+        <input type="hidden" name="fn" value="search">
+        <input type="hidden" name="vid" value="FUB">
+        <span class="glyphicon glyphicon-search"></span>
+        <input id="primosearchInput" name="vl(freeText0)" placeholder="click on concepts below to fill this input">
+        <input title="Go!" type="submit" class="btn btn-primary" name="searchButton">
+    </form>
+    </div>
+     <% } %>
+ <div class="column col-md-6">
+ <% if (typeof props !== "undefined") { %>
+     <h3>Concepts</h3>
+     <ul id="concepts">
+    
+       <% var i = 0, len = props.length;
+       	  
+  		  for (i; i < len; i += 1) { 
+  			// var ask = 'eu.fusepool.enhancer.engines.dictionaryannotator.DictionaryAnnotatorEnhancerEngine';
+  			var engine = props[i].creator;
+  			
+  			
+			switch (engine){
+				case 'eu.fusepool.enhancer.engines.dictionaryannotator.DictionaryAnnotatorEnhancerEngine':
+				 var id = props[i]['entity-reference'].split('/').pop()
+  				  , label = props[i]['entity-label']['@value']
+  				  , type = props[i].type.split('#').pop();
+				 %> <% include result-adaptors/dictionaryAnnotator %> <%
+				break;
+				
+				case 'org.apache.stanbol.enhancer.engines.dbpspotlight.annotate.DBPSpotlightAnnotateEnhancementEngine': 
+				 var id = props[i]['entity-reference']
+  				  , label = props[i]['entity-label']['@value'];		  
+				%> <% include result-adaptors/DBPSpotlightAnnotator %> <%
+				break;
+				
+				default:
+				// nothing
+			}
+		%>
+  			
+  
+      <% } %>
+  		</ul>
+ </div> <!-- end column col-md-6 -->
+ <div id="tagcloud-container" class="column col-md-6">
+            <h3>Tagcloud</h3>
+ </div>
+ </div><!-- /.row #results -->
+<% } else { %>
+<div>
+	<!-- <h3>Sorry, no Results</h3> -->
+</div>
+<% } %>
+
+
+<script>
+    var conceptCollector = [];
+    var conceptCollectorName = [];
+</script>
+<script>
+    $(document).ready(function(){
+        // function to get info per GND id
+        $('span.more').on('click',function(e) {
+
+        var handle = $(this);
+        var id = handle.attr('data');
+        var description = handle.find('#gndDesc'+id);
+
+            if ($(this).hasClass('called')){
+                //console.log('fade out');
+                description.toggleClass('hidden');
+            } else{
+                $(this).addClass('called');
+                $.ajax('/zbw/'+id, {
+                 type: 'GET',
+                 contentType: 'application/json',
+                 dataType: 'json',
+                 data: id,
+                 success: function (result) {
+                    //console.log('about to query ' + id); console.log(result);
+                     var categories = result[0].categories;
+                     console.dir(categories);
+                     //description.append("categories: ");
+                     var i =categories.length , myArray = [];
+                     while(i--){ description.append('<span class="gndCategoryLabel"><span class="badge">' + result[0].categories[i].cat + '</span>' + result[0].categories[i].label +'</span>' );}
+                     description.toggleClass('hidden');
+                 }
+                });
+            }
+        })
+
+      $('#results').on('click','a.concept-name',function(e){// .on('click',function(e) {
+        e.preventDefault();
+         conceptCollector.push($(this).data('id'));
+          $('#primosearchInput').val($('#primosearchInput').val() +'(' + $(this).text().trim() +' OR ');
+          $('#primosearchInput').val($('#primosearchInput').val() + $(this).data('id').trim() +') AND ');
+       // $('#primosearch').value.append($(this).data('id'));
+
+          console.dir($(this).data('id')+'  clicked');
+          //alert('thanks for clicking');
+      })
+    });
+</script>
+<% include foot %>

@@ -1,0 +1,35 @@
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/stopwords.js"></script>
+<script src="/js/services.js"></script>
+
+
+ <pre id="debug"></pre>
+ <div id="query"></div>
+ <div id="answer"></div>
+ <div id="form">
+ <form action="gnd/" method="post"> <!-- onsubmit="return submitText(this); "
+ http://de.selfhtml.org/html/referenz/attribute.htm#form
+ -->
+     <div>
+         <label>Stop Words</label>
+         <div id="stopwordlists">
+             here
+         </div>
+     </div><br>
+
+     <div>
+         <label>Services</label>
+         <div id="services">
+             <select name="service">
+
+             </select>
+         </div>
+     </div><br>
+
+     <div></div>
+ <textarea id="analyzerInput" name="analyze" type="text" cols="35" rows="4" placeholder="paste your text here"></textarea>
+ <input type="submit" value="annotate">
+ </form>
+ </div>
+ <div id="results">
+ </div>

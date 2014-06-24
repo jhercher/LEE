@@ -1,0 +1,22 @@
+{
+    "fake1":{
+        "label":"Fake1",
+        "uri":"http://localhost:8081/fakeresponse/res/grouping/bsp1.json"
+    },
+    "fake2":{
+        "label":"Fake2",
+        "uri":"http://localhost:8081/fakeresponse/res/grouping/bsp2.json"
+    },
+    "fake3":{
+        "label":"Fake3",
+        "uri":"http://localhost:8081/fakeresponse/res/grouping/bsp3.json"
+    },
+    "all":{
+        "label":"All",
+        "uri":"http://data.ub.fu-berlin.de:8080/enhancer/chain/gnd-all"
+    },
+    "products":{
+        "label":"Products",
+        "uri":"http://data.ub.fu-berlin.de:8080/enhancer/chain/gnd-products"
+    }
+}

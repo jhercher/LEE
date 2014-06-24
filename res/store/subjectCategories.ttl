@@ -1,0 +1,2037 @@
+@prefix : <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#GndSubjectCategoryValue> a owl:Class ;
+	rdfs:subClassOf :Concept ;
+	owl:equivalentClass _:node18pk92j5qx23561 .
+
+_:node18pk92j5qx23561 a owl:Restriction ;
+	owl:onProperty :inScheme ;
+	owl:hasValue <http://d-nb.info/standards/vocab/gnd/gnd-sc> .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc> a :ConceptScheme ;
+	dc:title "GND Subject Categories"@en , "GND-Sachgruppen"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#00> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Unspezifische AllgemeinwÃ¶rter"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#00m> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Maschinell eingespielte DatensÃ¤tze
+            (Platzhalter)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#00p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sachlich nicht klassifizierbare Personen"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Allgemeines, InterdisziplinÃ¤re
+            AllgemeinwÃ¶rter"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Schrift, Buch, Presse"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#2.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Schrift, Handschriftenkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#2.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Schrift, Handschriftenkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#2.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Buchwissenschaft, Buchhandel"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#2.2p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Buchwissenschaft, Buchhandel"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#2.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Presse"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#2.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Presse"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Religion"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Allgemeine und vergleichende Religionswissenschaft,
+            Nichtchristliche Religionen"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu allgemeiner und vergleichender
+            Religionswissenschaft, Personen zu nichtchristlichen Religionen"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.2-3.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Christentum"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bibel"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Altes Testament"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.2aa> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Teile des Alten Testamentes"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Neues Testament"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.2ba> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Teile des Neuen Testamentes"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.2p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen der Bibel"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kirchengeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.3a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kirchengeschichte: Antike"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.3b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kirchengeschichte: Mittelalter"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.3c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kirchengeschichte: Neuzeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Systematische Theologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.4a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Systematische Theologie (Allgemeines),
+            Fundamentaltheologie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.4b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Dogmatik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.4c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Theologische Anthropologie, Christliche Ethik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Praktische Theologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Liturgik, FrÃ¶mmigkeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Homiletik, Katechetik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5ba> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Homiletik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5bb> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Katechetik, Christliche Erziehung, Kirchliche
+            Bildungsarbeit"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Seelsorge, Mission"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5ca> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Seelsorge"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.5cb> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Mission, Kirchliche Sozialarbeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kirche und Konfession"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.6a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Katholische Kirche"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.6b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Evangelische Kirchen"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.6c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Ostkirchen und andere christliche Religionsgemeinschaften und
+            Sekten"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#3.6p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Kirchengeschichte, Systematischer und Praktischer
+            Theologie, Kirche und Konfession"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Philosophie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Philosophie (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Philosophiegeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Erkenntnistheorie, Logik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Metaphysik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Ethik, Philosophische Anthropologie,
+            Sozialphilosophie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Ãsthetik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kulturphilosophie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#4.7p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Philosophie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Psychologie, Esoterik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Psychologie allgemein, Tests"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Psychologie (Allgemeines), Experimentelle
+            Psychologie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Psychologische Diagnostik, Tests"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Entwicklungspsychologie, Vergleichende
+            Psychologie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozial-, Kultur- und VÃ¶lkerpsychologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Tiefenpsychologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Angewandte Psychologie, Psychohygiene"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Psychologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Parapsychologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Esoterik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#5.7p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Parapsychologie, Esoterik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kultur, Erziehung, Bildung, Wissenschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Kultur und KÃ¼nste, Geistes- und
+            Kulturgeschichte"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kultur, KÃ¼nste allgemein"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geistes- und Kulturgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Kultur und KÃ¼nsten, Geistes- und
+            Kulturgeschichte"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Bildungswesen allgemein, Geschichte des
+            Bildungswesens"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bildungswesen (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte des Bildungswesens"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Schule, Berufsausbildung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.3a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Schule"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.3b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Berufsausbildung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Unterricht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Bildungswesen"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wissenschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Hochschule"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bibliothek, Information und Dokumentation"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.7p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Bibliothek, Information und
+            Dokumentation"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.8> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Archiv, Museum"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#6.8p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Archiv, Museum"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Recht, Allgemeine Verwaltung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Recht allgemein, Ãffentliches Recht allgemein, Privatrecht
+            allgemein, Rechtsvergleich"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Recht allgemein, Rechtsphilosophie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rechtsvergleich"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rechtsgeschichte, Verfassungsgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Rechtsgeschichte, Verfassungsgeschichte:
+            Altertum"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Rechtsgeschichte, Verfassungsgeschichte:
+            Mittelalter"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.2c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Rechtsgeschichte, Verfassungsgeschichte:
+            Neuzeit"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Staatsrecht, Verfassungsrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeines Verwaltungsrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Besonderes Verwaltungsrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.5a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Dienstrecht (auch Richter)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.5b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kommunalrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.5c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Baurecht, Raumordnung, Bodenrecht, Umweltrecht,
+            Naturschutzrecht, Denkmalschutz"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.5d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Kulturrecht, Presserecht, Rundfunkrecht, Bildungswesen und
+            Forschung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.5e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """StraÃen- und Wegerecht, Verkehrsrecht,
+            Telekommunikationsrecht"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.5f> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wehrrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Polizeirecht, Gesundheitsrecht, Kriminologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.6a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Polizeirecht, Ordnungsrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.6b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Gesundheitsrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.6c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kriminologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Strafrecht, Strafvollzug"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.7a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Strafrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.7b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Strafvollzug"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.8> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rechtspflege, Prozessrecht, Rechtsmedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.8a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rechtspflege, Prozessrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.8b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rechtsmedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.9> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Finanzrecht, Steuerrecht, Zollrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.9a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Finanzrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.9b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Steuerrecht, Zollrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.10> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftsrecht, Gewerblicher Rechtsschutz"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.10a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftsrecht, Wirtschaftsaufsicht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.10b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Gewerblicher Rechtsschutz, Urheberrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.11> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Arbeitsrecht, Sozialrecht, GebÃ¼hrenrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.11a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Arbeitsrecht, Sozialrecht, Recht der
+            TarifvertrÃ¤ge"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.11b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Berufsrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.11c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "GebÃ¼hrenrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.12> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "BÃ¼rgerliches Recht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.12a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeiner Teil des BÃ¼rgerlichen Rechts"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.12b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Schuldrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.12c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sachenrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.12d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Familienrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.12e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Erbrecht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.13> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Religionsrecht, Kirchenrecht,
+            Staatskirchenrecht"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.14> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Internationales Recht (einschlieÃlich VÃ¶lkerrecht und Recht
+            der EuropÃ¤ischen Gemeinschaften, EuropÃ¤ischen Union), Kollisionsrecht"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.14p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Recht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.15> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Ãffentliche Verwaltung, Geschichte der Ãffentlichen
+            Verwaltung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.15a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Ãffentliche Verwaltung, Ãffentlicher Dienst"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.15b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte der Ãffentlichen Verwaltung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#7.15p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Ã¶ffentlicher Verwaltung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Politik, MilitÃ¤r"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Politik (Allgemeines), Politische Theorie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen (Politologen, Staatstheoretiker)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Innenpolitik, Parteien"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Innenpolitik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Parteien, Politische Organisationen"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "AuÃenpolitik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "MilitÃ¤r"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#8.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu politischer Theorie, MilitÃ¤r"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Soziologie, Gesellschaft, Arbeit,
+            Sozialgeschichte"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialgeschichte: Altertum"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialgeschichte: Mittelalter"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.1c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialgeschichte: Neuzeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Sozialwissenschaften allgemein, Soziologische Theorien,
+            Statistik in den Sozialwissenschaften"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Sozialwissenschaften allgemein, Soziologische
+            Theorien"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Methoden und Techniken der empirischen Sozialforschung,
+            Statistik in den Sozialwissenschaften, Mathematische Statistik"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialstruktur, Soziales Leben, BevÃ¶lkerung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.3a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Soziales Leben, BevÃ¶lkerung (Allgemeines), Gesellschaft
+            allgemein"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.3b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """BevÃ¶lkerung, Sozialstruktur, Soziale Situation, Soziale
+            Bewegungen"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.3c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Gruppe, Organisationssoziologie, Interaktion"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.3d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialisation, Sozialverhalten"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.3e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kommunikation, Meinungsbildung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Arbeit, Arbeitswelt, Gewerkschaften"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.4a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Arbeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.4ab> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """\"Einzelne Berufe, TÃ¤tigkeiten, Funktionen;
+            ReligionszugehÃ¶rigkeit, Weltanschauung\""""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.4b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Mitbestimmung, Gewerkschaften"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialpolitik, Sozialarbeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.5a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialpolitik, Entwicklungshilfe"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.5b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Sozialversicherung und Gesetzliche
+            Krankenversicherung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.5c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sozialarbeit, Sozialhilfe"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#9.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Soziologie, Gesellschaft, Arbeit,
+            Sozialgeschichte"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Wirtschaft, Verkehr, Umweltschutz,
+            Raumordnung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftsgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftsgeschichte: Altertum"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftsgeschichte: Mittelalter"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.1c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftsgeschichte: Neuzeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Wirtschaftsgeschichte (bis ca.
+            1900)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaft, Volkswirtschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaft, Volkswirtschaft (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2aa> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Volkswirtschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2ab> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftssystem"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2ac> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Mathematische Methoden, Information,
+            Entscheidung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Haushalt, Verbraucher"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "MikroÃ¶konomie, Wettbewerb"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Konjunktur, Verteilung, Wirtschaftsstruktur"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2da> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftskreislauf, Konjunktur"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2db> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Verteilung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2dc> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftsstruktur"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2dp> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Wirtschaftswissenschaften"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "AuÃenwirtschaft, AuÃenhandel"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2ea> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """AuÃenwirtschaft, AuÃenhandel
+            gesamtwirtschaftlich"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2eb> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "AuÃenwirtschaft, AuÃenhandel betrieblich"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.2ep> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu AuÃenwirtschaft, AuÃenhandel"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Ãffentliche Aufgaben, Ãffentliche Wirtschaft, Energie- und
+            Rohstoffwirtschaft"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.3a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Ãffentliche Aufgaben"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.3b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Ãffentliche Wirtschaft, Abfallwirtschaft,
+            GesundheitsÃ¶konomie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.3c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Energie- und Wasserwirtschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.3d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rohstoffwirtschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Ã¶ffentlichen Aufgaben, Ãffentlicher Wirtschaft,
+            Energie- und Rohstoffwirtschaft"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Wirtschaftspolitik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Wirtschaftspolitik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Finanzwirtschaft, Finanzpolitik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Finanzwirtschaft, Finanzpolitik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Telekommunikation und Verkehr, Fremdenverkehr"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.6a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Telekommunikation und Verkehr"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.6b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Fremdenverkehr, Hotel- und GaststÃ¤ttengewerbe"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.6p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Telekommunikation und Verkehr,
+            Fremdenverkehr"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Umweltschutz, Raumordnung,
+            Landschaftsgestaltung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.7a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Umweltschutz, Umweltbelastung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.7b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Raumordnung, Stadtplanung,
+            Landschaftsgestaltung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.7p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Umweltschutz, Raumordnung,
+            Landschaftsgestaltung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.8> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bau und Boden"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.8a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Ãffentliche und private BautÃ¤tigkeit, Bau- und
+            Bodenpolitik"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.8b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bauwirtschaft, Baubetrieb und Bodenmarkt"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.8p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Bau, Boden"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.9> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geld, Bank, BÃ¶rse"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.9a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geldtheorie, Geldpolitik, WÃ¤hrung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.9b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bank"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.9c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kapitalmarkt, BÃ¶rse, Kapitalanlage"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.9p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Geld, Bank, BÃ¶rse"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.10> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Genossenschaft, Gemeinwirtschaft, Alternative
+            Wirtschaft"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.10p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Genossenschaft, Gemeinwirtschaft, Alternativer
+            Wirtschaft"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Betriebswirtschaftslehre"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Betriebswirtschaftslehre (Allgemeines), Unternehmen,
+            Management"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Mathematische Methoden, Information,
+            Entscheidung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Beschaffung, Produktion"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kosten"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Marketing, Wettbewerb"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11f> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rechnungswesen, Steuer, Revision"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11g> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Investition, Finanzierung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11h> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personalpolitik, Arbeitsgestaltung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11i> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "BÃ¼ro, BÃ¼rokommunikation"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11m> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Spezielle Informationssysteme, Programme"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.11p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Betriebswirtschaftslehre"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.12> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Gewerbe allgemein, Industrie, Handwerk"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.12a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Industrie, Industriebetrieb, Handwerk"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.12b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Einzelne Branchen der Industrie und des
+            Handwerks"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.12p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Gewerbe allgemein, Industrie,
+            Handwerk"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.13> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Handel, Dienstleistung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.13a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Handel allgemein, Dienstleistung allgemein"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.13b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Handel einzelner Branchen, Dienstleistung einzelner
+            Branchen"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.13p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Handel, Dienstleistung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.14> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Versicherung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.14p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Versicherung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.15> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Werbewirtschaft, Ãffentlichkeitsarbeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#10.15p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Werbewirtschaft,
+            Ãffentlichkeitsarbeit"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sprache"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Sprache (Allgemeines), Historische Sprachwissenschaft,
+            Sprachliche Technik"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sprache (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Historische Sprachwissenschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.1c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sprachliche Technik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sprachtheorie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Sprachtheorie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Grammatik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.2c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Phonetik, Phonologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.2p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Sprache"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Lexikologie, Namenkunde, Fachsprache"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.3a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Lexikologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.3b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Namenkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.3c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Fachsprache"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#11.3d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Anonymes Werk als Sprachdenkmal"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Literatur"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Literatur (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Literaturwissenschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Literarisches Leben"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Literaturwissenschaft
+            (Literaturwissenschaftler)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Literaturgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Literaturgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Anonyme literarische Werke"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.2p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Literaturgeschichte
+            (Schriftsteller)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Literaturgattung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Literarische Motive, Stoffe, Gestalten"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen als literarisches Motiv"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#12.4y> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geografische Namen als literarisches Motiv"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bildende Kunst, Fotografie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bildende Kunst, Kunstgeschichte, Motive"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bildende Kunst"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kunstgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.1bp> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Kunstwissenschaft,
+            Kunsthistoriker"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.1c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sachliche Motive in der Kunst"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.1cp> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen als kÃ¼nstlerisches Motiv"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.1cy> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geografische Namen als kÃ¼nstlerisches Motiv"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Plastik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.2p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Plastik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Malerei"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Zeichnung, Grafik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Malerei, Zeichnung, Grafik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Fotografie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Fotografie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kunsthandwerk"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.6p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Kunsthandwerk"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Neue Formen der Kunst"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#13.7p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu neuen Formen der Kunst"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#14> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Musik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#14.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Musik (Allgemeines), Musikgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#14.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Musikalische Form, Musikgattung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#14.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Musikinstrumentenkunde, Musikinstrumentenbau"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#14.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Systematische und Angewandte
+            Musikwissenschaft"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#14.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Musik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Theater, Tanz, Film, Rundfunk"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Theater, Tanz"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Theater, Tanz"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kabarett, Zirkus, VarietÃ©"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.2p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Kabarett, Zirkus, VarietÃ©"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Film"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Film"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Rundfunk, Neue Medien"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#15.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Rundfunk, Neuen Medien"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.1p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen der Geschichtswissenschaft (Historiker,
+            ArchÃ¤ologen)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Quellen und Historische Hilfswissenschaften"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "ArchÃ¤ologie, Vor- und FrÃ¼hgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte Ã¼berregionaler Gebiete"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.4a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte Ã¼berregionaler Gebiete: Altertum"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.4b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Geschichte Ã¼berregionaler Gebiete:
+            Mittelalter"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.4c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte Ã¼berregionaler Gebiete: Neuzeit"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.4d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Geschichte Ã¼berregionaler Gebiete:
+            Zeitgeschichte"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte einzelner LÃ¤nder und VÃ¶lker"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#16.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen der Geschichte (Politiker und historische
+            PersÃ¶nlichkeiten)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#17> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Volkskunde, VÃ¶lkerkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#17.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Volkskunde, VÃ¶lkerkunde (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#17.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Brauchtum, Volksglaube"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#17.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sachkultur, Volkskunst"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#17.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Volksliteratur, Volksmusik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#17.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Volkskunde, VÃ¶lkerkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#18> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Natur, Naturwissenschaften allgemein"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#18p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Natur, Naturwissenschaften
+            allgemein"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geowissenschaften"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geografie, Heimat- und LÃ¤nderkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Geografie, Heimat- und LÃ¤nderkunde
+            (Allgemeines)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Physische Geografie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.1c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Anthropogeografie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.1d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Reise"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.1dp> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Geografie, Heimat- und
+            LÃ¤nderkunde"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "GeodÃ¤sie, Kartografie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.2p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu GeodÃ¤sie, Kartografie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Hydrologie, Meereskunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Hydrologie, Meereskunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geologie, Mineralogie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.4a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Geologie, Geophysik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.4b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Historische Geologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.4c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Mineralogie, Boden-, Gesteins- und
+            LagerstÃ¤ttenkunde"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.4d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "PalÃ¤ontologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Geologie, Mineralogie, Historischer Geologie,
+            Boden-, Gesteins- und LagerstÃ¤ttenkunde, PalÃ¤ontologie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Meteorologie, Klimatologie, HochatmosphÃ¤re,
+            MagnetosphÃ¤re"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#19.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Meteorologie, Klimatologie, HochatmosphÃ¤re,
+            MagnetosphÃ¤re"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#20> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Astronomie, Weltraumforschung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#20p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Astronomie, Weltraumforschung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#21> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Physik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#21.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Physik (Allgemeines), Mathematische Physik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#21.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Mechanik, WÃ¤rme, Akustik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#21.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "ElektrizitÃ¤t, Magnetismus, Optik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#21.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Elementarteilchen, Kern-, Atom-,
+            Molekularphysik"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#21.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Plasma, Gas, FlÃ¼ssigkeit, FestkÃ¶rper"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#21.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Physik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#22> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Chemie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#22.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Chemie (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#22.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Theoretische und Physikalische Chemie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#22.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Analytische Chemie und Untersuchungsmethoden"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#22.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Anorganische Chemie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#22.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Organische Chemie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#22.5p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Chemie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Biologie, Mikrobiologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Allgemeine Biologie, Mikrobiologie
+            (Allgemeines)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Biologie allgemein"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Genetik, Evolution"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Biochemie, Biophysik, Zytologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Mikrobiologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Untersuchungsmethoden (Biologie)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#23.4p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu allgemeiner Biologie,
+            Mikrobiologie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#24> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Botanik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#24.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Botanik (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#24.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Botanik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#24.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Pflanzenanatomie, Pflanzenphysiologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#24.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Pflanzensoziologie, PflanzenÃ¶kologie,
+            Pflanzengeografie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#24.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Spezielle Botanik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#24.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Botanik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#25> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Zoologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#25.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Zoologie (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#25.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Zoologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#25.2a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Anatomie, Tierphysiologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#25.2b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Tiersoziologie, TierÃ¶kologie, Tiergeografie,
+            Verhaltensforschung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#25.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Spezielle Zoologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#25.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Zoologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#26> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Anthropologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#26p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Anthropologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Medizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Medizin (Allgemeines), Medizingeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Medizin (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Medizingeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Anatomie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Physiologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.3a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Physiologie (Allgemeines), Physiologische
+            Chemie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.3b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Blut, KardiovaskulÃ¤res System, Atmungsorgan"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.3c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "ErnÃ¤hrung, Stoffwechsel, Inkretion"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.3d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Haut, Knochen, Nerven, Muskeln, Sinnesorgane"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.3e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Harn- und Geschlechtsorgane"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Allgemeine Pathologie, Onkologie, Experimentelle
+            Medizin"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Diagnostik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Medizinische Radiologie, Nuklearmedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Allgemeine Therapie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.8> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Pharmazie, Pharmakologie, Toxikologie,
+            Immunologie"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.8a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Pharmazie, Pharmakologie, Toxikologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.8b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Immunologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.9> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Innere Medizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.9a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "HÃ¤matologie, Kardiologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.9b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Pulmonologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.9c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Gastroenterologie, Endokrinopathie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.9d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Urologie, Nephrologie, Andrologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.9e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Knochen, Gelenke, Muskeln"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.9f> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Infektionen"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.10> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Chirurgie, OrthopÃ¤die"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.11> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "GynÃ¤kologie, Geburtshilfe"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.12> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Kinderheilkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.13> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Neurologie, Psychiatrie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.14> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Dermatologie, Venerologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.15> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Hals-Nasen-Ohren-Heilkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.16> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Augenheilkunde"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.17> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Zahnmedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.18> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sexualmedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.19> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sondergebiete der Medizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.20> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Hygiene, Gesundheitswesen"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.20p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Medizin, Tiermedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#27.21> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Tiermedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#28> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Mathematik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#28p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Mathematik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#29> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Stochastik, Operations Research"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#29p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Stochastik, Operations Research"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#30> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Informatik, Datenverarbeitung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#30m> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Informatikprodukte (Hardware- und
+            Softwareprodukte)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#30p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Informatik, Datenverarbeitung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Technik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Technik (Allgemeines), Technikgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Technik (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Technische Physik, Technische Mathematik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.1c> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Mess-, Steuerungs- und Regelungstechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.1d> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Werkstoffkunde, WerkstoffprÃ¼fung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.1e> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Technikgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "SanitÃ¤rtechnik, Umwelttechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Architektur, Bautechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.3a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Architektur"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.3ab> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Ortsgebundene Bauwerke"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.3b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bautechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Architektur, Bautechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Bergbau, HÃ¼ttentechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Energietechnik, Kerntechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Maschinenbau"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Fahrzeugbau, FÃ¶rdertechnik, Raumfahrttechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.8> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Fertigungstechnik, Feinwerktechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.8a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Fertigungstechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.8b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Feinwerktechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.9> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Elektrotechnik, Elektronik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.9a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Elektrotechnik, Elektrische Energietechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.9b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Elektronik, Nachrichtentechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.10> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Verfahrenstechnik, Technische Chemie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.11> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Lebensmitteltechnologie"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.12> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Textiltechnik, Gummi- und Lederverarbeitung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.13> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Holzbearbeitung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.14> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Papierherstellung, Grafische Technik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.15> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Glas, Keramik, Steine und Erden"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.16> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "MilitÃ¤rtechnik"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#31.16p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Technik (ohne Architektur,
+            Bautechnik)"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Landwirtschaft, Garten"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Landwirtschaft (Allgemeines),
+            Landwirtschaftsgeschichte"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.1a> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Landwirtschaft allgemein"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.1b> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Landwirtschaftsgeschichte"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Agrarpolitik, Agrarmarkt, Landwirtschaftliche
+            Betriebslehre"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Ackerbau"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.4> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Gartenbau, Obstbau"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.5> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Phytomedizin"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.6> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Tierzucht, Tierhaltung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.7> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Milchwirtschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.8> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Forstwirtschaft"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.9> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Jagd"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.10> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Fischerei, Fischzucht"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#32.10p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Landwirtschaft, Garten"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#33> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Hauswirtschaft, KÃ¶rperpflege, Mode, Kleidung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#33.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Hauswirtschaft, KÃ¶rperpflege"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#33.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Kochen, Backen, Lebens- und Genussmittel,
+            KÃ¼chengerÃ¤t"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#33.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Mode, Kleidung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#33.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel """Personen zu Hauswirtschaft, KÃ¶rperpflege, Mode,
+            Kleidung"""@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#34> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sport"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#34.1> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Sport (Allgemeines)"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#34.2> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Geschichte des Sports"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#34.3> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Einzelne Sportarten"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#34.3p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Sport"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#35> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Spiel, Unterhaltung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#35p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Spiel, Unterhaltung"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#36> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Basteln, Handarbeiten, Heimwerken"@de .
+
+<http://d-nb.info/standards/vocab/gnd/gnd-sc#36p> a :Concept ;
+	:inScheme <http://d-nb.info/standards/vocab/gnd/gnd-sc> ;
+	:prefLabel "Personen zu Basteln, Handarbeiten, Heimwerken"@de .

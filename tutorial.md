@@ -1,10 +1,6 @@
-The Library Enrichment Engine is a simple client for semiautomated annotation of plain text with GND Identifiers. This is a sample client to demonstrate the use of Fusepools String Matching Algorithmus (SMA) and REST i/o capabilities.
 
 About
 -----
-
-The original goal was to prove the feasibility of using the [Fusepool SMA component](https://github.com/fusepool/fusepool-sma) to interlink Linked Data Sources, like [DBpedia](http://dbpedia.org) with other data
-classification schemes, such as [GND](http://d-nb.info/standards/elementset/gnd). We want to find additional interlinks between data sets to enrich both sets.
 
 In this tutorial I will explain how I installed and configured fusepool to
 

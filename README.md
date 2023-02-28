@@ -1,5 +1,7 @@
-Library Enrichment Engine
+Library Enrichment Engine 
 ===
+
+This repo is **archived**, as [Stanbol/Fusepool is in the attic](https://attic.apache.org/projects/stanbol.html)
 
 ### About
 
